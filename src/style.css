@@ -1,0 +1,35 @@
+:root {
+  --bg: #fafafa; --fg: #1d1d1f; --muted: #6b6b70; --panel: #fff; --line: #d8d8dc;
+  --accent: #2563eb; --grid: #e4e4e8; --key-down: #93c5fd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131316; --fg: #ececf0; --muted: #9a9aa2; --panel: #1b1b20; --line: #34343c;
+    --accent: #60a5fa; --grid: #2a2a31; --key-down: #3b82f6;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px system-ui, sans-serif; }
+#app { max-width: 1400px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+h1 { font-size: 18px; margin: 0 12px 0 0; }
+header { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+header label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+header input[type=number] { width: 60px; }
+output { min-width: 2.5em; color: var(--fg); font-variant-numeric: tabular-nums; }
+canvas { width: 100%; height: 240px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+#harm {
+  display: flex; gap: 2px; overflow-x: auto; padding: 8px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 6px;
+}
+.col { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 30px; }
+.col span { font-size: 11px; color: var(--muted); }
+.col input[type=range] { writing-mode: vertical-lr; direction: rtl; width: 20px; margin: 0; }
+.col .amp { height: 150px; accent-color: var(--accent); }
+.col .phase { height: 70px; accent-color: #d97706; }
+#kb { position: relative; height: 150px; user-select: none; touch-action: none; }
+.key { position: absolute; top: 0; border: 1px solid #333; border-radius: 0 0 4px 4px; cursor: pointer;
+  display: flex; align-items: flex-end; justify-content: center; font-size: 10px; padding-bottom: 4px; }
+.key.white { width: calc(100% / var(--whites)); height: 100%; background: #fff; color: #555; }
+.key.black { width: calc(0.6 * 100% / var(--whites)); height: 62%; background: #222; z-index: 1; }
+.key.down { background: var(--key-down); }
+footer { color: var(--muted); font-size: 12px; }
