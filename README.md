@@ -4,7 +4,7 @@ A browser app to explore additive sound synthesis and waveform shape.
 You set the amplitude and phase of each harmonic. The app shows the sum
 waveform and plays it on a piano keyboard.
 
-Try it online: https://jgoizueta.github.io/harmonics/
+Try it online: https://jgoizueta.net/harmonics/
 
 I made this app to examine one fact about sound: the phase of each
 harmonic changes the shape of the waveform, but for a steady tone the

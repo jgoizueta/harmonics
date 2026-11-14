@@ -5,7 +5,7 @@
   "description": "Browser app to explore additive synthesis: set the amplitude and phase of each harmonic, see the waveform, and play it.",
   "author": "Javier Goizueta <jgoizueta@gmail.com>",
   "license": "MIT",
-  "homepage": "https://jgoizueta.github.io/harmonics/",
+  "homepage": "https://jgoizueta.net/harmonics/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jgoizueta/harmonics.git"
